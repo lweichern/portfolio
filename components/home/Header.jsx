@@ -30,6 +30,7 @@ export default function Header() {
           height={200}
           width={200}
           alt="Profile"
+          priority={true}
         ></Image>
       </motion.div>
       <motion.div
@@ -41,7 +42,7 @@ export default function Header() {
         <h1 className=" text-[#c7c9ca] text-6xl font-title">LIM WEI CHERN</h1>
         <h1 className="text-3xl text-accent">
           <span> {text}</span>
-          <Cursor cursorColor="" />
+          <Cursor />
         </h1>
       </motion.div>
       <ContactMe />

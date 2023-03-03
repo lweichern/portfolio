@@ -12,12 +12,7 @@ export default function Animate() {
 
   return (
     <div className="wrapper w-20 h-20">
-      <motion.div
-        className="container"
-        style={{
-          scale,
-        }}
-      ></motion.div>
+      <motion.div className="container"></motion.div>
     </div>
   );
 }

@@ -25,18 +25,13 @@ export default function ProjectModal({ modalObj, toggle }) {
           </motion.h4>
         </div>
 
-        <motion.div
-          layoutId={`${modalObj.name}image`}
-          transition={{ duration: 0.5 }}
-        >
-          <Image
-            src={`/images/projects/${modalObj.imageSrc}`}
-            alt={`${modalObj.name} Image`}
-            width={500}
-            height={500}
-            className="w-full rounded-lg my-4"
-          />
-        </motion.div>
+        <Image
+          src={`/images/projects/${modalObj.imageSrc}`}
+          alt={`${modalObj.name} Image`}
+          width={300}
+          height={500}
+          className=" w-auto h-auto rounded-lg my-4"
+        />
         <motion.div
           layoutId={`${modalObj.name}description`}
           transition={{ duration: 0.5 }}
@@ -46,7 +41,7 @@ export default function ProjectModal({ modalObj, toggle }) {
         </motion.div>
         <ul className="flex gap-3 text-accent font-semibold">
           {modalObj.languages.map((lang) => (
-            <li>{lang}</li>
+            <li key={lang.name}>{lang}</li>
           ))}
         </ul>
       </motion.div>
