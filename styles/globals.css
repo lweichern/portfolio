@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Poppins&family=Roboto+Condensed:wght@300;400&family=Stardos+Stencil:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.neumorphism-shadow {
+  box-shadow: 6px 6px 12px #252739, -6px -6px 12px #31334b;
+}
+
+.neumorphism-shadow:hover {
+  box-shadow: 28px 28px 56px #212232, -28px -28px 56px #353852;
+}
+
+nav .active .line {
+  display: block;
+}
+
+nav .active .hamburgerLine {
+  display: block;
+}
+
+nav .active {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
