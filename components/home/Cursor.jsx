@@ -10,8 +10,6 @@ export default function Cursor() {
       setCursorPosition({ x: e.clientX, y: e.clientY });
     };
 
-    const onMouseDown = (e) => {};
-
     window.addEventListener("mousemove", onMouseMove);
 
     return () => {

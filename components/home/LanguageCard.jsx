@@ -1,7 +1,5 @@
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { RiVuejsFill } from "react-icons/ri";
 
 export default function LanguageCard({ name, component }) {
   return (

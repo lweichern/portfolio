@@ -1,12 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import {
-  AiOutlineGithub,
-  AiOutlineLinkedin,
-  AiOutlineFacebook,
-  AiOutlineMail,
-} from "react-icons/ai";
 
 export default function ContactsCards({ name, component, variantItem }) {
   return (

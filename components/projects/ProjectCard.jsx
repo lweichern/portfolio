@@ -1,8 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
-import { AiOutlineArrowRight } from "react-icons/ai";
-import { MdReadMore, MdOutlineLiveTv } from "react-icons/md";
+import { MdOutlineLiveTv } from "react-icons/md";
 import Link from "next/link";
 
 export default function ProjectCard({

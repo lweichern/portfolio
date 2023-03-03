@@ -1,13 +1,10 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
-import Languages from "../components/home/languages";
+import Languages from "../components/home/Languages";
 import Header from "../components/home/Header";
 import Positions from "../components/home/Positions";
-import Animate from "../components/home/Animate";
-import ContactMe from "../components/home/ContactMe";
 import Cursor from "../components/home/Cursor";
 import Projects from "../components/projects/Projects";
-import { useRef } from "react";
 
 export default function Home() {
   return (
