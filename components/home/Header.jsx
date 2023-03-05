@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import ContactMe from "./ContactMe";
+import SocialIcons from "./SocialIcons";
 import ScrollIcon from "./ScrollIcon";
 
 export default function Header() {
@@ -45,7 +45,7 @@ export default function Header() {
           <Cursor />
         </h1>
       </motion.div>
-      <ContactMe />
+      <SocialIcons />
     </section>
   );
 }

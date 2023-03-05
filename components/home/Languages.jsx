@@ -7,7 +7,7 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { RiVuejsFill } from "react-icons/ri";
 
 export default function Languages({}) {
-  const logoStyle = "w-6 h-6 mx-auto";
+  const logoStyle = "w-8 h-8 mx-auto";
 
   const languages = [
     {

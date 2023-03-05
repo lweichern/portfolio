@@ -1,5 +1,5 @@
 import React from "react";
-import ContactsCards from "./ContactsCards";
+import SocialsIconsCards from "./SocialIconsCard";
 import { motion } from "framer-motion";
 import {
   AiOutlineGithub,
@@ -10,7 +10,7 @@ import {
 
 const className = "w-5 h-5 text-slate-300 duration-300 group-hover:scale-125";
 
-const contacts = [
+const icons = [
   {
     name: "linkedIn",
     component: <AiOutlineLinkedin className={className} />,
@@ -63,7 +63,7 @@ const item = {
   },
 };
 
-export default function ContactMe() {
+export default function SocialIcons() {
   return (
     <div>
       {/* <div className="text-4xl py-5 text-black text-center font-semibold uppercase tracking-widest">
@@ -75,9 +75,9 @@ export default function ContactMe() {
         initial="hidden"
         animate="visible"
       >
-        {contacts.map((elem) => {
+        {icons.map((elem) => {
           return (
-            <ContactsCards
+            <SocialsIconsCards
               key={elem.name}
               component={elem.component}
               variantItem={item}

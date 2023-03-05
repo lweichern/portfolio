@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-export default function ContactsCards({ name, component, variantItem }) {
+export default function SocialsIconsCards({ name, component, variantItem }) {
   return (
     <Link href="/">
       <motion.div

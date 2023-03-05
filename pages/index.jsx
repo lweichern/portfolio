@@ -5,6 +5,7 @@ import Header from "../components/home/Header";
 import Positions from "../components/home/Positions";
 import Cursor from "../components/home/Cursor";
 import Projects from "../components/projects/Projects";
+import ContactMe from "../components/contactMe/ContactMe";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Positions />
       <Languages />
       <Projects />
+      <ContactMe />
     </Layout>
   );
 }
