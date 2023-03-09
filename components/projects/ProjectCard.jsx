@@ -14,9 +14,9 @@ export default function ProjectCard({
 }) {
   return (
     <motion.div
-      initial={{ y: 10, opacity: 0 }}
-      whileInView={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.3 }}
+      initial={{ y: 20 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 0.2 }}
       whileHover={{ y: -5, x: 5 }}
       className="neumorphism-shadow w-[80%] h-auto p-3 rounded-lg duration-300 shadow-md shadow-slate-900"
     >
