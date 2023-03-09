@@ -30,6 +30,10 @@ a {
   box-shadow: 28px 28px 56px #212232, -28px -28px 56px #353852;
 }
 
+.neumorphism-shadow-form {
+  box-shadow: 10px 10px 20px #c1c1c2, -30px -30px 60px #c8c8c9;
+}
+
 nav .active .line {
   display: block;
 }

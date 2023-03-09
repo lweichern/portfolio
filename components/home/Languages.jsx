@@ -7,7 +7,7 @@ import { TbBrandNextjs } from "react-icons/tb";
 import { RiVuejsFill } from "react-icons/ri";
 
 export default function Languages({}) {
-  const logoStyle = "w-8 h-8 mx-auto";
+  const logoStyle = "w-10 h-10 mx-auto";
 
   const languages = [
     {
@@ -59,13 +59,13 @@ export default function Languages({}) {
   return (
     <section
       id="languagesSection"
-      className="text-center bg-secondary text-primary py-4"
+      className="text-center bg-secondary text-primary py-8"
     >
-      <h1 className=" text-4xl py-5 font-semibold uppercase tracking-widest font-title ">
+      <h1 className=" text-4xl pb-5 font-semibold uppercase tracking-widest font-title ">
         Programming Languages
       </h1>
       <motion.div
-        className="flex justify-center gap-3 flex-wrap mx-auto"
+        className="grid gap-3 mx-auto grid-row grid-cols-fluid2 justify-items-center"
         variants={container}
         initial="hidden"
         animate="visible"

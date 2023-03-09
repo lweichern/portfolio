@@ -23,6 +23,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         fluid: "repeat(auto-fit,minmax(25rem,1fr))",
+        fluid2: "repeat(auto-fit,minmax(20rem,1fr))",
       },
     },
     fontFamily: {

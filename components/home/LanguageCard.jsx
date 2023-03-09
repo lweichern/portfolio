@@ -14,7 +14,7 @@ export default function LanguageCard({ name, component }) {
     >
       {/* <RiVuejsFill /> */}
       <div className="mx-auto">{component}</div>
-      <div className=" text-xl">{name}</div>
+      <div className=" text-xl font-semibold">{name}</div>
     </motion.div>
   );
 }
