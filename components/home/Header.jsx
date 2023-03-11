@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import SocialIcons from "./SocialIcons";
 import ScrollIcon from "./ScrollIcon";
-import Overview from "../overview/overview";
+import Overview from "../overview/Overview";
 import { useMediaQuery } from "@react-hook/media-query";
 
 export default function Header() {
