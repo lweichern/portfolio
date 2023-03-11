@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
+import Divider from "../Divider";
 
 export default function Projects() {
   const [toggleModal, setToggleModal] = useState(false);
@@ -72,9 +73,10 @@ export default function Projects() {
   return (
     <section id="projectsSection" className="text-center bg-primary py-4">
       {toggleModal && <ProjectModal modalObj={modalObj} toggle={toggle} />}
-      <h1 className=" text-4xl py-5 font-semibold uppercase tracking-widest font-title">
+      <h1 className=" text-4xl pt-5 font-semibold uppercase tracking-widest font-title">
         Projects
       </h1>
+      <Divider bgColor="blue" />
       <motion.div className="grid gap-1 gap-y-10 grid-row grid-cols-fluid justify-items-center">
         {projects.map((projectElem) => (
           <ProjectCard

@@ -5,6 +5,7 @@ import { IoLogoJavascript, IoLogoHtml5, IoLogoCss3 } from "react-icons/io";
 import { SiTailwindcss, SiTypescript, SiReact } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { RiVuejsFill } from "react-icons/ri";
+import Divider from "../Divider";
 
 export default function Languages({}) {
   const logoStyle = "w-10 h-10 mx-auto";
@@ -61,9 +62,10 @@ export default function Languages({}) {
       id="languagesSection"
       className="text-center bg-secondary text-primary py-8"
     >
-      <h1 className=" text-4xl pb-5 font-semibold uppercase tracking-widest font-title ">
-        Programming Languages
+      <h1 className=" text-4xl font-semibold uppercase tracking-widest font-title ">
+        Skills
       </h1>
+      <Divider bgColor="white" />
       <motion.div
         className="grid gap-3 mx-auto grid-row grid-cols-fluid2 justify-items-center"
         variants={container}

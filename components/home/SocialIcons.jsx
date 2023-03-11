@@ -14,18 +14,22 @@ const icons = [
   {
     name: "linkedIn",
     component: <AiOutlineLinkedin className={className} />,
+    url: "https://www.linkedin.com/in/weichernlim/",
   },
   {
     name: "github",
     component: <AiOutlineGithub className={className} />,
+    url: "https://github.com/lweichern",
   },
   {
     name: "email",
     component: <AiOutlineMail className={className} />,
+    url: "/",
   },
   {
     name: "facebook",
     component: <AiOutlineFacebook className={className} />,
+    url: "https://www.facebook.com/lim.weichern.3/",
   },
 ];
 
@@ -36,7 +40,7 @@ const container = {
     transition: {
       when: "beforeChildren",
       staggerChildren: 0.2,
-      delay: 2.5,
+      delay: 4,
       default: { ease: "easeInOut" },
     },
   },
@@ -56,7 +60,7 @@ const item = {
   },
   visible: {
     opacity: 1,
-    y: 0,
+    y: 20,
     transition: {
       ease: "easeInOut",
     },
@@ -65,10 +69,7 @@ const item = {
 
 export default function SocialIcons() {
   return (
-    <div>
-      {/* <div className="text-4xl py-5 text-black text-center font-semibold uppercase tracking-widest">
-        Contact Me
-      </div> */}
+    <div className="mt-4">
       <motion.div
         className="flex gap-3 justify-center flex-wrap mx-auto"
         variants={container}
@@ -80,6 +81,7 @@ export default function SocialIcons() {
             <SocialsIconsCards
               key={elem.name}
               component={elem.component}
+              url={elem.url}
               variantItem={item}
             />
           );

@@ -3,14 +3,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import { Link } from "react-scroll";
+import { links } from "./navlinks";
 // import resume from "../public/images/[Resume.pdf]";
-
-const links = [
-  { name: "Home", path: "headerSection" },
-  { name: "Programming Languages", path: "languagesSection" },
-  { name: "Projects", path: "projectsSection" },
-  { name: "Contact Me", path: "contactMe" },
-];
 
 const hamburgerClass = "w-6 h-[1.5px] bg-slate-300";
 
