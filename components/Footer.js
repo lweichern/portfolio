@@ -16,6 +16,7 @@ export default function Footer() {
             offset={-85}
             duration={200}
             key={link.path}
+            className=" cursor-pointer"
           >
             {link.name}
           </Link>
