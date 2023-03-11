@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className=" text-center py-10 shadow-2xl">
       <div>&copy; {year} Lim Wei Chern. All rights reserved.</div>
-      <ul className="grid gap-1 grid-row grid-cols-fluidFooter justify-items-center mt-6 mx-auto text-accent lg:w-1/2">
+      <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 items-center text-accent lg:w-1/2 mx-auto my-3">
         {links.map((link) => (
           <Link
             to={link.path}
