@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import { Link } from "react-scroll";
 import { links } from "./navlinks";
-import resume from "../public/images/Resume.pdf";
-import { jsPDF } from "jspdf";
+// import resume from "../public/images/[Resume.pdf]";
 
 const hamburgerClass = "w-6 h-[1.5px] bg-slate-300";
 
@@ -32,17 +31,17 @@ export default function Navbar() {
         Logo
       </motion.div> */}
 
-      <a href={resume} download="Resume">
-        <motion.div
-          initial={{ y: -300, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 2 }}
-          className="bg-primary text-sm md:text-base font-bold text-secondary p-3 rounded hover:bg-secondary hover:text-primary border-secondary border-2 cursor-pointer"
-          onClick={downloadCV}
-        >
-          Download CV
-        </motion.div>
-      </a>
+      {/* <a href={resume} download="Resume"> */}
+      <motion.div
+        initial={{ y: -300, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 2 }}
+        className="bg-primary text-sm md:text-base font-bold text-secondary p-3 rounded hover:bg-secondary hover:text-primary border-secondary border-2 cursor-pointer"
+        onClick={downloadCV}
+      >
+        Download CV
+      </motion.div>
+      {/* </a> */}
 
       <motion.ul
         initial={{ y: -300, opacity: 0 }}

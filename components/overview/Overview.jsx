@@ -15,12 +15,12 @@ export default function Overview() {
 
       <h3>
         <p>
-          Hi, I'm Wei Chern, a skilled web developer with 3 years of experience
-          building responsive and user-friendly websites. I specialize in
-          front-end development, and I'm proficient in HTML, CSS, JavaScript,
-          and React, as well as several popular frameworks like Vue and
-          Tailwind. Besides, I also have experience with backend frameworks such
-          as NodeJS and NestJS.
+          Hi, I&apos;m Wei Chern, a skilled web developer with 3 years of
+          experience building responsive and user-friendly websites. I
+          specialize in front-end development, and I&apos;m proficient in HTML,
+          CSS, JavaScript, and React, as well as several popular frameworks like
+          Vue and Tailwind. Besides, I also have experience with backend
+          frameworks such as NodeJS and NestJS.
         </p>
         <br />
         <p>
@@ -31,9 +31,9 @@ export default function Overview() {
         </p>
         <br />
         <p>
-          If you're interested in learning more about my experience and skills,
-          or if you have a project you'd like to discuss, please don't hesitate
-          to get in touch!
+          If you&apos;re interested in learning more about my experience and
+          skills, or if you have a project you&apos;d like to discuss, please
+          don&apos;t hesitate to get in touch!
         </p>
       </h3>
     </motion.div>
