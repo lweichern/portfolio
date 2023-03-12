@@ -37,8 +37,10 @@ export default function Header() {
       <div className="h-screen justify-center items-center flex flex-col lg:w-[40%]">
         {/* <ScrollIcon /> */}
         <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={
+            isSmallScreen ? { opacity: 0, y: 20 } : { opacity: 0, x: 20 }
+          }
+          animate={isSmallScreen ? { opacity: 1, y: 0 } : { opacity: 1, x: 0 }}
           transition={{ duration: 1.5, delay: isSmallScreen ? 2 : 3 }}
           className=""
         >

@@ -15,20 +15,25 @@ export default function Overview() {
 
       <h3>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
-          laborum dolorem iure nulla at maxime, ad dicta incidunt consectetur,
-          atque totam commodi itaque perspiciatis aliquam voluptate maiores
-          molestiae ratione numquam. Voluptates vitae odio hic magni, enim
-          voluptatum placeat! Ratione veniam officia debitis dignissimos
-          officiis illum recusandae repellat dicta minima ad. Lorem ipsum dolor
-          sit amet consectetur adipisicing.
+          Hi, I'm Wei Chern, a skilled web developer with 3 years of experience
+          building responsive and user-friendly websites. I specialize in
+          front-end development, and I'm proficient in HTML, CSS, JavaScript,
+          and React, as well as several popular frameworks like Vue and
+          Tailwind. Besides, I also have experience with backend frameworks such
+          as NodeJS and NestJS.
         </p>
         <br />
         <p>
-          Maiores porro facere quidem aut temporibus quas voluptate quisquam,
-          necessitatibus recusandae illo accusamus repudiandae, fuga, sequi
-          saepe architecto? Delectus consequatur iure soluta voluptates quae
-          sit, animi aut cumque! Labore deleniti omnis qui!
+          Personally, I like working on challenging projects like e-commerce
+          site with complicated functionalities. Besides, I like building
+          websites with intuitive user interfaces that provides exquisite user
+          experience.
+        </p>
+        <br />
+        <p>
+          If you're interested in learning more about my experience and skills,
+          or if you have a project you'd like to discuss, please don't hesitate
+          to get in touch!
         </p>
       </h3>
     </motion.div>

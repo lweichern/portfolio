@@ -7,6 +7,7 @@ import {
   AiOutlineFacebook,
   AiOutlineMail,
 } from "react-icons/ai";
+import { useMediaQuery } from "@react-hook/media-query";
 
 const className = "w-5 h-5 text-slate-300 duration-300 group-hover:scale-125";
 
@@ -33,41 +34,42 @@ const icons = [
   },
 ];
 
-const container = {
-  visible: {
-    opacity: 1,
-    y: -20,
-    transition: {
-      when: "beforeChildren",
-      staggerChildren: 0.2,
-      delay: 4,
-      default: { ease: "easeInOut" },
-    },
-  },
-  hidden: {
-    opacity: 0,
-    x: 1,
-    transition: {
-      when: "afterChildren",
-    },
-  },
-};
-
-const item = {
-  hidden: {
-    opacity: 0,
-    y: 20,
-  },
-  visible: {
-    opacity: 1,
-    y: 20,
-    transition: {
-      ease: "easeInOut",
-    },
-  },
-};
-
 export default function SocialIcons() {
+  const isSmallScreen = useMediaQuery("(max-width: 768px)");
+
+  const container = {
+    visible: {
+      opacity: 1,
+      y: -20,
+      transition: {
+        when: "beforeChildren",
+        staggerChildren: 0.2,
+        delay: isSmallScreen ? 3 : 4,
+        default: { ease: "easeInOut" },
+      },
+    },
+    hidden: {
+      opacity: 0,
+      x: 1,
+      transition: {
+        when: "afterChildren",
+      },
+    },
+  };
+
+  const item = {
+    hidden: {
+      opacity: 0,
+      y: 20,
+    },
+    visible: {
+      opacity: 1,
+      y: 20,
+      transition: {
+        ease: "easeInOut",
+      },
+    },
+  };
   return (
     <div className="mt-4">
       <motion.div
