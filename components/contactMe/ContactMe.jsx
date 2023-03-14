@@ -2,6 +2,17 @@ import React from "react";
 import Divider from "../Divider";
 
 export default function ContactMe() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const message = e.target.message.value;
+
+    e.target.name.value = "";
+    e.target.email.value = "";
+    e.target.message.value = "";
+  };
+
   return (
     <section
       id="contactMe"
@@ -15,6 +26,67 @@ export default function ContactMe() {
         <Divider bgColor="white" />
 
         <div className="neumorphism-shadow-form block rounded-lg p-6 bg-secondary mx-auto w-[90%] md:w-[70%] lg:w-[50%]">
+          <form
+            action="/send-data-here"
+            className=" w-[60%] mx-auto"
+            method="post"
+            onSubmit={handleSubmit}
+          >
+            <div className="text-left my-3">
+              <label
+                htmlFor="name"
+                className="text-primary text-md font-semibold"
+              >
+                Name:
+              </label>
+              <br />
+              <input
+                type="text"
+                name="name"
+                className="bg-secondary text-primary border-2 border-primary w-full p-1"
+              />
+            </div>
+            <div className="text-left my-3">
+              <label
+                htmlFor="email"
+                className="text-primary text-md font-semibold"
+              >
+                Email:
+              </label>
+              <br />
+              <input
+                type="email"
+                id="last"
+                name="email"
+                className="bg-secondary color-primary border-2 border-primary w-full p-1"
+              />
+            </div>
+            <div className="text-left my-3">
+              <label
+                htmlFor="message"
+                className="text-primary text-md font-semibold"
+              >
+                Message:
+              </label>
+              <br />
+              <textarea
+                name="message"
+                id=""
+                cols="30"
+                rows="10"
+                className="bg-secondary color-primary border-2 border-primary w-full p-1"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="bg-primary w-full text-secondary p-3 rounded hover:opacity-90"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+
+        {/* <div className="neumorphism-shadow-form block rounded-lg p-6 bg-secondary mx-auto w-[90%] md:w-[70%] lg:w-[50%]">
           <form>
             <div
               className="relative mb-6 text-primary"
@@ -36,7 +108,7 @@ export default function ContactMe() {
             <div className="relative mb-6" data-te-input-wrapper-init>
               <input
                 type="email"
-                className="peer block min-h-[auto] border-2 border-primary focus:border-secondary w-full rounded bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                className="text-primary peer block min-h-[auto] border-2 border-primary focus:border-secondary w-full rounded bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none  [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                 id="exampleInput8"
                 placeholder="Email address"
               />
@@ -49,7 +121,7 @@ export default function ContactMe() {
             </div>
             <div className="relative mb-6" data-te-input-wrapper-init>
               <textarea
-                className="peer block min-h-[auto] w-full rounded border-2 border-primary focus:border-secondary bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
+                className=" text-primary peer block min-h-[auto] w-full rounded border-2 border-primary focus:border-secondary bg-transparent py-[0.32rem] px-3 leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
                 id="exampleFormControlTextarea13"
                 rows="6"
                 placeholder="Message"
@@ -70,7 +142,7 @@ export default function ContactMe() {
               Send
             </button>
           </form>
-        </div>
+        </div> */}
       </div>
     </section>
   );
