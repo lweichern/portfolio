@@ -28,7 +28,7 @@ export default function ContactMe() {
         <div className="neumorphism-shadow-form block rounded-lg p-6 bg-secondary mx-auto w-[90%] md:w-[70%] lg:w-[50%]">
           <form
             action="/send-data-here"
-            className=" w-[60%] mx-auto"
+            className=" w-[90%] mx-auto"
             method="post"
             onSubmit={handleSubmit}
           >

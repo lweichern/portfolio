@@ -21,7 +21,7 @@ export default function ProjectCard({
       whileHover={{ y: -5, x: 5 }}
       className="neumorphism-shadow w-[80%] h-auto p-3 rounded-lg duration-300 shadow-md shadow-slate-900"
     >
-      <motion.div layoutId={`${name}image`} transition={{ duration: 0.5 }}>
+      <motion.div transition={{ duration: 0.5 }}>
         <Image
           src={`/images/projects/${imageSrc}`}
           alt={`${name} Image`}
@@ -34,14 +34,12 @@ export default function ProjectCard({
       {/* <Image src={imageSrc} alt={`${name} Image`} fill /> */}
       <div className="flex justify-between items-center relative my-2">
         <motion.h2
-          layoutId={name}
           className="text-left text-3xl font-semibold text-secondary"
           transition={{ duration: 0.5 }}
         >
           {name}
         </motion.h2>
         <motion.h4
-          layoutId={`${name}${year}`}
           className="text-accent font-bold"
           transition={{ duration: 0.5 }}
         >
@@ -50,7 +48,6 @@ export default function ProjectCard({
       </div>
 
       <motion.div
-        layoutId={`${name}description`}
         className="text-left font-description my-2"
         transition={{ duration: 0.5 }}
       >
