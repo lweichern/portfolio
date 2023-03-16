@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
-import Languages from "../components/home/Languages";
-import Header from "../components/home/Header";
-import Positions from "../components/home/Positions";
-import Cursor from "../components/home/Cursor";
+import Languages from "../components/skills/Languages";
+import Header from "../components/hero/Header";
+import Positions from "../components/positions/Positions";
+import Cursor from "../components/common/Cursor";
 import Projects from "../components/projects/Projects";
 import ContactMe from "../components/contactMe/ContactMe";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Divider from "../Divider";
+import Divider from "../common/Divider";
 
 export default function ContactMe() {
   const handleSubmit = (e) => {

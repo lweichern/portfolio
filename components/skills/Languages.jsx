@@ -5,7 +5,7 @@ import { IoLogoJavascript, IoLogoHtml5, IoLogoCss3 } from "react-icons/io";
 import { SiTailwindcss, SiTypescript, SiReact } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { RiVuejsFill } from "react-icons/ri";
-import Divider from "../Divider";
+import Divider from "../common/Divider";
 
 export default function Languages({}) {
   const logoStyle = "w-10 h-10 mx-auto";

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
-import Divider from "../Divider";
+import Divider from "../common/Divider";
 
 export default function Projects() {
   const [toggleModal, setToggleModal] = useState(false);
