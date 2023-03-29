@@ -26,6 +26,9 @@ module.exports = {
         fluid2: "repeat(auto-fit,minmax(20rem,1fr))",
         fluidFooter: "repeat(auto-fit,minmax(8rem,1fr))",
       },
+      animation: {
+        "bounce-slow": "bounce 3s linear infinite",
+      },
     },
     fontFamily: {
       title: ["Poppins", "sans-serif"],

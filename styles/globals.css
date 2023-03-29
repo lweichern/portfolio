@@ -34,6 +34,10 @@ a {
   box-shadow: 10px 10px 20px #c1c1c2, -30px -30px 60px #c8c8c9;
 }
 
+.neumorphism-shadow-contact-me {
+  box-shadow: 2px 2px 8px 2px #c9cecf;
+}
+
 nav .active .line {
   display: block;
 }
