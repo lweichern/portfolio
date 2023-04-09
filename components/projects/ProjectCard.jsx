@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { MdOutlineLiveTv } from "react-icons/md";
 import Link from "next/link";
+import { AiOutlineGithub } from "react-icons/ai";
 
 export default function ProjectCard({
   name,
@@ -10,6 +11,7 @@ export default function ProjectCard({
   description,
   url,
   year,
+  githubUrl,
   toggle,
 }) {
   return (
@@ -61,6 +63,11 @@ export default function ProjectCard({
         >
           Read More
         </button>
+        <Link href={githubUrl} target="_blank">
+          <button className="flex justify-around gap-2 items-center p-2 text-accent bg-secondary font-bold cursor-pointer hover:text-secondary duration-150 bg-gradient-to-b from-slate-400 to-slate-50 hover:from-accent hover:to-accent">
+            View Code <AiOutlineGithub />
+          </button>
+        </Link>
         <Link href={url} target="_blank">
           <button className="flex justify-around gap-2 items-center p-2 text-accent bg-secondary font-bold cursor-pointer hover:text-secondary duration-150 bg-gradient-to-b from-slate-400 to-slate-50 hover:from-accent hover:to-accent">
             Live Site <MdOutlineLiveTv />
