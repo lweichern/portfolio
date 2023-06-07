@@ -17,6 +17,24 @@ export default function Projects() {
 
   const projects = [
     {
+      name: "EventMemo",
+      url: "https://t3-to-do-list-e48h.vercel.app/",
+      imageSrc: "project 7.jpg",
+      description:
+        "Developed a Single-Page Website called Event Memo that mimics a to-do-list using the T3 stack. The data is stored in an open-source database called Supabase and called using PostgreSQL.",
+      year: "2023",
+      githubUrl: "https://github.com/lweichern/T3-to-do-list",
+      languages: [
+        "React JS",
+        "NextJS",
+        "TypeScript",
+        "Prisma",
+        "TRPC",
+        "Tailwind CSS",
+        "NextAuth",
+      ],
+    },
+    {
       name: "MovieNow",
       url: "https://lweichern.github.io/Movie-Now-TS/",
       imageSrc: "project 6.jpg",
