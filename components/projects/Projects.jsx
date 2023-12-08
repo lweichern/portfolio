@@ -17,6 +17,22 @@ export default function Projects() {
 
   const projects = [
     {
+      name: "Captivate AI",
+      url: "https://captivate-ai.vercel.app/",
+      imageSrc: "CaptivateAI.png",
+      description: "A SaaS project that generates product description mainly for property agents using OpenAI Api. Libraries like NextJS, Tailwind, and Typescript are used on the frontend. Data are stored in Supabase and the authentication methods are configured using Clerk Auth.",
+      year: "2023",
+      githubUrl: "https://github.com/lweichern/CaptivateAI",
+      languages: [
+        "Next JS",
+        "Typescript",
+        "Tailwind CSS",
+        "Framer Motion",
+        "ClerkAuth",
+        "Supabase"
+      ]
+    },
+    {
       name: "EventMemo",
       url: "https://t3-to-do-list-e48h.vercel.app/",
       imageSrc: "project 7.jpg",

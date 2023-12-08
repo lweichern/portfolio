@@ -1,8 +1,8 @@
 import React from "react";
 import LanguageCard from "./LanguageCard";
 import { motion } from "framer-motion";
-import { IoLogoJavascript, IoLogoHtml5, IoLogoCss3 } from "react-icons/io";
-import { SiTailwindcss, SiTypescript, SiReact } from "react-icons/si";
+import { IoLogoJavascript, IoLogoHtml5, IoLogoCss3, IoLogoNodejs } from "react-icons/io";
+import { SiTailwindcss, SiTypescript, SiReact, SiNestjs } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { RiVuejsFill } from "react-icons/ri";
 import Divider from "../common/Divider";
@@ -43,6 +43,13 @@ export default function Languages({}) {
       name: "Vue JS",
       component: <RiVuejsFill className={logoStyle} />,
     },
+    {
+      name: "Node JS",
+      component: <IoLogoNodejs className={logoStyle} />
+    },
+    {
+      name: "Nest JS"
+    }
   ];
 
   const container = {
