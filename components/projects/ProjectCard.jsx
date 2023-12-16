@@ -61,7 +61,7 @@ export default function ProjectCard({
         {description}
       </motion.div>
 
-      <div className="flex gap-3 my-2 xl:translate-y-5 xl:opacity-0 xl:group-hover:translate-y-0 xl:group-hover:opacity-100 duration-300">
+      <div className="flex gap-3 my-5 xl:translate-y-5 xl:opacity-0 xl:group-hover:translate-y-0 xl:group-hover:opacity-100 duration-300">
         <button
           className="flex justify-around gap-2 items-center p-2 text-accent bg-secondary font-bold cursor-pointer hover:text-secondary duration-150 bg-gradient-to-b from-slate-400 to-slate-50 hover:from-accent hover:to-accent"
           onClick={() => toggle(name)}
@@ -70,12 +70,12 @@ export default function ProjectCard({
         </button>
         <Link href={githubUrl} target="_blank">
           <button className="flex justify-around gap-2 items-center p-2 text-accent bg-secondary font-bold cursor-pointer hover:text-secondary duration-150 bg-gradient-to-b from-slate-400 to-slate-50 hover:from-accent hover:to-accent">
-            View Code <AiOutlineGithub />
+            View Code <AiOutlineGithub className="hidden md:block" />
           </button>
         </Link>
         <Link href={url} target="_blank">
           <button className="flex justify-around gap-2 items-center p-2 text-accent bg-secondary font-bold cursor-pointer hover:text-secondary duration-150 bg-gradient-to-b from-slate-400 to-slate-50 hover:from-accent hover:to-accent">
-            Live Site <MdOutlineLiveTv />
+            Live Site <MdOutlineLiveTv className="hidden md:block" />
           </button>
         </Link>
       </div>
