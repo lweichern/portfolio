@@ -20,7 +20,8 @@ export default function Projects() {
       name: "Captivate AI",
       url: "https://captivate-ai.vercel.app/",
       imageSrc: "CaptivateAI.png",
-      description: "A SaaS project that generates product description mainly for property agents using OpenAI Api. Libraries like NextJS, Tailwind, and Typescript are used on the frontend. Data are stored in Supabase and the authentication methods are configured using Clerk Auth.",
+      description:
+        "A SaaS project that generates product description mainly for property agents using OpenAI Api. Libraries like NextJS, Tailwind, and Typescript are used on the frontend. Data are stored in Supabase and the authentication methods are configured using Clerk Auth.",
       year: "2023",
       githubUrl: "https://github.com/lweichern/CaptivateAI",
       languages: [
@@ -29,8 +30,8 @@ export default function Projects() {
         "Tailwind CSS",
         "Framer Motion",
         "ClerkAuth",
-        "Supabase"
-      ]
+        "Supabase",
+      ],
     },
     {
       name: "EventMemo",
@@ -105,16 +106,6 @@ export default function Projects() {
         "Developed a game called Wordle using ReactJS. The point of the game is to guess a random 5-letter-word with hints given after each wrong guess. The game allows the player to guess up to 6 times and the final word will be randomized after each page refresh.",
       year: "2021",
       githubUrl: "https://github.com/lweichern/wordle",
-      languages: ["HTML", "CSS", "Javascript", "ReactJS"],
-    },
-    {
-      name: "Event",
-      url: "https://lweichern.github.io/Event-Memo/",
-      imageSrc: "project 1.jpg",
-      description:
-        "Developed a to-do-list that allows user to help them keep track of things that need to be done. User can login to the to-do-list with the provided credentials before creating thier records. Sorting functions is also being implemented based on date added, completed/incompleted tasks or alphabetical order. The user can also toggle the task when it is completed by double clicking on it.",
-      year: "2021",
-      githubUrl: "https://github.com/lweichern/Event-Memo",
       languages: ["HTML", "CSS", "Javascript", "ReactJS"],
     },
   ];

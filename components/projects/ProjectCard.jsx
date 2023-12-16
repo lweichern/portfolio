@@ -18,10 +18,15 @@ export default function ProjectCard({
     <motion.div
       initial={{ y: 20, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ type: "spring", stiffness: 260, damping: 20, duration: 0.3 }}
+      transition={{
+        type: "spring",
+        stiffness: 260,
+        damping: 20,
+        duration: 0.3,
+      }}
       viewport={{ once: true }}
       whileHover={{ y: -5, x: 5 }}
-      className="neumorphism-shadow w-[80%] h-auto p-3 rounded-lg duration-300 shadow-md shadow-slate-900 flex flex-col"
+      className="neumorphism-shadow w-[80%] h-auto p-3 rounded-lg duration-300 shadow-md shadow-slate-900 flex flex-col group"
     >
       <motion.div transition={{ duration: 0.5 }}>
         <Image
@@ -36,13 +41,13 @@ export default function ProjectCard({
       {/* <Image src={imageSrc} alt={`${name} Image`} fill /> */}
       <div className="flex justify-between items-center relative my-2">
         <motion.h2
-          className="text-left text-3xl font-semibold text-secondary"
+          className="text-left text-3xl font-semibold text-secondary group-hover:text-2xl duration-300"
           transition={{ duration: 0.5 }}
         >
           {name}
         </motion.h2>
         <motion.h4
-          className="text-accent font-bold"
+          className="text-accent font-bold group-hover:text-base duration-300 text-lg"
           transition={{ duration: 0.5 }}
         >
           {year}
@@ -50,13 +55,13 @@ export default function ProjectCard({
       </div>
 
       <motion.div
-        className="text-left font-description my-2 flex-1"
+        className="text-left font-description my-2 flex-1 text-base translate-y-5 xl:group-hover:translate-y-0 duration-300"
         transition={{ duration: 0.5 }}
       >
         {description}
       </motion.div>
 
-      <div className="flex gap-3 my-2">
+      <div className="flex gap-3 my-2 xl:translate-y-5 xl:opacity-0 xl:group-hover:translate-y-0 xl:group-hover:opacity-100 duration-300">
         <button
           className="flex justify-around gap-2 items-center p-2 text-accent bg-secondary font-bold cursor-pointer hover:text-secondary duration-150 bg-gradient-to-b from-slate-400 to-slate-50 hover:from-accent hover:to-accent"
           onClick={() => toggle(name)}

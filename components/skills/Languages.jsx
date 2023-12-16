@@ -1,10 +1,22 @@
 import React from "react";
 import LanguageCard from "./LanguageCard";
 import { motion } from "framer-motion";
-import { IoLogoJavascript, IoLogoHtml5, IoLogoCss3, IoLogoNodejs } from "react-icons/io";
-import { SiTailwindcss, SiTypescript, SiReact, SiNestjs } from "react-icons/si";
+import {
+  IoLogoJavascript,
+  IoLogoHtml5,
+  IoLogoCss3,
+  IoLogoNodejs,
+} from "react-icons/io";
+import {
+  SiTailwindcss,
+  SiTypescript,
+  SiReact,
+  SiNestjs,
+  SiJquery,
+} from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { RiVuejsFill } from "react-icons/ri";
+import { FaFigma, FaGitAlt, FaJava } from "react-icons/fa";
 import Divider from "../common/Divider";
 
 export default function Languages({}) {
@@ -24,6 +36,10 @@ export default function Languages({}) {
       component: <IoLogoJavascript className={logoStyle} />,
     },
     {
+      name: "Java",
+      component: <FaJava className={logoStyle} />,
+    },
+    {
       name: "Tailwind",
       component: <SiTailwindcss className={logoStyle} />,
     },
@@ -36,6 +52,10 @@ export default function Languages({}) {
       component: <SiReact className={logoStyle} />,
     },
     {
+      name: "Git",
+      component: <FaGitAlt className={logoStyle} />,
+    },
+    {
       name: "Next JS",
       component: <TbBrandNextjs className={logoStyle} />,
     },
@@ -45,11 +65,22 @@ export default function Languages({}) {
     },
     {
       name: "Node JS",
-      component: <IoLogoNodejs className={logoStyle} />
+      component: <IoLogoNodejs className={logoStyle} />,
     },
     {
-      name: "Nest JS"
-    }
+      name: "JQuery",
+      component: <SiJquery className={logoStyle} />,
+    },
+    {
+      name: "Figma",
+      component: <FaFigma className={logoStyle} />,
+    },
+    {
+      name: "Nest JS",
+      component: (
+        <img src="images/nestJS.png" alt="Nest JS Icon" className={logoStyle} />
+      ),
+    },
   ];
 
   const container = {
