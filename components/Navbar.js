@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <nav className="flex justify-between items-center bg-primary py-5 px-5 shadow-md fixed top-0 z-10 w-full">
-      <Link href="/Resume.pdf" target="_blank" download="">
+      <Link href="/LimWeiChern-Resume.pdf" target="_blank" download="">
         <motion.div
           initial={{ y: -300, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}

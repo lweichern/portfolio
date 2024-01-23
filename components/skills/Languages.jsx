@@ -13,6 +13,9 @@ import {
   SiReact,
   SiNestjs,
   SiJquery,
+  SiPython,
+  SiDjango,
+  SiExpress,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { RiVuejsFill } from "react-icons/ri";
@@ -48,6 +51,20 @@ export default function Languages({}) {
       component: <SiTypescript className={logoStyle} />,
     },
     {
+      name: "Python",
+      component: <SiPython className={logoStyle} />,
+    },
+    {
+      name: "Golang",
+      component: (
+        <img
+          src="images/golang.png"
+          alt="Golang Icon"
+          className="w-20 h-10 mx-auto"
+        />
+      ),
+    },
+    {
       name: "React JS",
       component: <SiReact className={logoStyle} />,
     },
@@ -66,6 +83,14 @@ export default function Languages({}) {
     {
       name: "Node JS",
       component: <IoLogoNodejs className={logoStyle} />,
+    },
+    {
+      name: "Express JS",
+      component: <SiExpress className={logoStyle} />,
+    },
+    {
+      name: "Django",
+      component: <SiDjango className={logoStyle} />,
     },
     {
       name: "JQuery",
