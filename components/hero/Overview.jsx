@@ -15,12 +15,13 @@ export default function Overview() {
 
       <h3>
         <p>
-          Hi, I&apos;m Wei Chern, a skilled web developer with 3 years of
-          experience building responsive and user-friendly websites. I
-          specialize in front-end development, and I&apos;m proficient in HTML,
-          CSS, JavaScript, and React, as well as several popular frameworks like
-          Vue and Tailwind. Besides, I also have experience with backend
-          frameworks such as NodeJS and NestJS.
+          Hi, I&apos;m Wei Chern, a skilled web developer with{" "}
+          {new Date().getFullYear() - 2020} years of experience building
+          responsive and user-friendly websites. I specialize in front-end
+          development, and I&apos;m proficient in HTML, CSS, JavaScript, and
+          React, as well as several popular frameworks like Vue and Tailwind.
+          Besides, I also have experience with backend frameworks such as NodeJS
+          , NestJS, Golang and Python.
         </p>
         <br />
         <p>
