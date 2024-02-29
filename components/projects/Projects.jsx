@@ -38,7 +38,7 @@ export default function Projects() {
       url: null,
       imageSrc: "Event Manager.png",
       description:
-        "Constructed a Kanban-like application facilitating users in creating and managing events along with associated tasks.",
+        "Constructed a Kanban-like application facilitating users in creating and managing events along with associated tasks. Users can drag and drop to different column to change the status of each individual tasks.",
       year: "2024",
       githubUrl: "https://github.com/lweichern/Event-Manager-Golang-Backend",
       languages: [
