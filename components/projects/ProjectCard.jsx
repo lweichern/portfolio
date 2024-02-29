@@ -14,6 +14,7 @@ export default function ProjectCard({
   githubUrl,
   toggle,
 }) {
+  console.log("URL", url);
   return (
     <motion.div
       initial={{ y: 20, opacity: 0 }}
@@ -73,11 +74,13 @@ export default function ProjectCard({
             View Code <AiOutlineGithub className="hidden md:block" />
           </button>
         </Link>
-        <Link href={url} target="_blank">
-          <button className="flex justify-around gap-2 items-center p-2 text-accent bg-secondary font-bold cursor-pointer hover:text-secondary duration-150 bg-gradient-to-b from-slate-400 to-slate-50 hover:from-accent hover:to-accent">
-            Live Site <MdOutlineLiveTv className="hidden md:block" />
-          </button>
-        </Link>
+        {url !== null && (
+          <Link href={url} target="_blank">
+            <button className="flex justify-around gap-2 items-center p-2 text-accent bg-secondary font-bold cursor-pointer hover:text-secondary duration-150 bg-gradient-to-b from-slate-400 to-slate-50 hover:from-accent hover:to-accent">
+              Live Site <MdOutlineLiveTv className="hidden md:block" />
+            </button>
+          </Link>
+        )}
       </div>
     </motion.div>
   );

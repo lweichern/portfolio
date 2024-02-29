@@ -34,21 +34,21 @@ export default function Projects() {
       ],
     },
     {
-      name: "EventMemo",
-      url: "https://t3-to-do-list-e48h.vercel.app/",
-      imageSrc: "project 7.jpg",
+      name: "Event Manager",
+      url: null,
+      imageSrc: "Event Manager.png",
       description:
-        "Developed a Single-Page Website called Event Memo that mimics a to-do-list using the T3 stack. The data is stored in an open-source database called Supabase and called using PostgreSQL.",
-      year: "2023",
-      githubUrl: "https://github.com/lweichern/T3-to-do-list",
+        "Constructed a Kanban-like application facilitating users in creating and managing events along with associated tasks.",
+      year: "2024",
+      githubUrl: "https://github.com/lweichern/Event-Manager-Golang-Backend",
       languages: [
         "React JS",
-        "NextJS",
         "TypeScript",
-        "Prisma",
-        "TRPC",
+        "Golang",
+        "Fiber",
         "Tailwind CSS",
-        "NextAuth",
+        "PostgreSQL",
+        "Zustand",
       ],
     },
     {
@@ -116,6 +116,8 @@ export default function Projects() {
       project.description = project.description.substring(0, 230) + "...";
     }
   }
+
+  console.log("Temp proejct: ", tempProjects);
 
   return (
     <section id="projectsSection" className="text-center bg-primary py-4">
